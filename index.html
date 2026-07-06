@@ -100,6 +100,9 @@
   header.site .bar { display: flex; align-items: center; gap: 18px; padding-top: 12px; padding-bottom: 12px; }
   .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
   .brand .mark { width: 46px; height: 46px; border-radius: 50%; border: 2px dashed var(--korvette-orange-300); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--korvette-orange-300); flex-shrink: 0; }
+  /* Logo chip: light badge so the crest's black lettering stays readable on the dark header. object-fit keeps the aspect ratio intact. */
+  .brand .brand-logo { width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--white); border-radius: var(--radius-md); padding: 4px; }
+  .brand .brand-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .brand .name { font-family: var(--font-display); font-weight: 700; letter-spacing: .04em; font-size: 20px; text-transform: uppercase; color: var(--paper); line-height: 1; display: block; }
   .brand .tag { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--korvette-orange-300); margin-top: 3px; display: block; }
   nav.desktop { margin-left: auto; display: flex; gap: 26px; align-items: center; }
@@ -230,9 +233,9 @@
 <!-- ======================= HEADER ======================= -->
 <header class="site">
   <div class="wrap bar">
-    <!-- LOGO: replace the "AK" mark below with <img src="assets/pictures/logo.png" alt="Al Koran Korvettes"> when you have the crest -->
+    <!-- LOGO: the Korvettes crest. Swap assets/pictures/logo.png to change it; it's sized by .brand-logo in the CSS above. -->
     <a class="brand" href="#top">
-      <span class="mark">AK</span>
+      <span class="brand-logo"><img src="assets/pictures/logo.png" alt="Al Koran Korvettes"></span>
       <span>
         <span class="name">Al Koran Korvettes</span>
         <span class="tag">Shriners Help Kids</span>
@@ -372,7 +375,7 @@
         <li>ATTN: Korvettes Unit</li>
         <li>Cleveland, Ohio 44181</li>
         <li><a href="mailto:alkorankorvettes@proton.me">alkorankorvettes@proton.me</a></li>
-        <li>Noble Michael Davison<br><a href="tel:+13306082414">(330) 608-2414</a></li>
+        <li>Noble Michael Davison, PP<br><a href="tel:+13306082414">(330) 608-2414</a></li>
       </ul>
     </div>
     <div>
