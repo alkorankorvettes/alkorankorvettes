@@ -210,7 +210,8 @@
   footer.site { background: var(--ink); color: var(--paper); border-top: 3px solid var(--korvette-orange); }
   .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding: 64px 0 32px; }
   .foot-brand .row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-  .foot-brand .mark { width: 42px; height: 42px; border-radius: 50%; border: 2px dashed var(--korvette-orange-300); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--korvette-orange-300); }
+  .foot-brand .brand-logo { width: 42px; height: 42px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--white); border-radius: var(--radius-md); padding: 4px; }
+  .foot-brand .brand-logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .foot-brand .name { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: 18px; }
   .foot-brand p { font-size: 14px; line-height: 1.6; color: rgba(251,248,242,.72); max-width: 38ch; margin: 0; }
   footer.site h4 { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: 13px; color: var(--korvette-orange-300); margin: 0 0 14px; }
@@ -363,7 +364,7 @@
   <div class="wrap foot-grid">
     <div class="foot-brand">
       <div class="row">
-        <span class="mark">AK</span>
+        <span class="brand-logo"><img src="assets/pictures/logo.png" alt="Al Koran Korvettes"></span>
         <span class="name">Al Koran Korvettes</span>
       </div>
       <p>A driving unit of the Al Koran Shriners, Cleveland, Ohio. Rolling for the kids since the day the paint dried.</p>
